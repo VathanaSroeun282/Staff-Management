@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\staffmanagment_api.props" />
+</Project>

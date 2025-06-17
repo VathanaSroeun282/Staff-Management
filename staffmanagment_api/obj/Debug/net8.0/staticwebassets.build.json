@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "KOKJ5eh2LgcATrKKx1J1x49v2XVIZ/bPO+g4dBwIqdI=",
+  "Source": "staffmanagment_api",
+  "BasePath": "_content/staffmanagment_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using staffmanagment_api.Data.StaffManagementSystem.Data;
 using staffmanagment_api.DTOs;
+using staffmanagment_api.Models;
 
 namespace staffmanagment_api.Controllers
 {
@@ -19,12 +20,6 @@ namespace staffmanagment_api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllDepartments()
         {
-            var Department = new DepartmentDto
-            {
-                DepartmentID = 1,
-                DepartmentName = "HR",
-                EmployeeNames = new List<string> { "John Doe", "Jane Smith" }
-            };
             var allDep = await _context!.Departments.Select(
                     e => new DepartmentDto
                     {
@@ -32,7 +27,41 @@ namespace staffmanagment_api.Controllers
                         DepartmentName = e.DepartmentName,
                         EmployeeNames = e.Employees != null ? e.Employees.Select(emp => emp.FirstName).ToList() : new List<string>()
                     }).ToListAsync();
-            return Ok(Department);
+            return Ok(allDep);
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetDepartmentById(int id)
+        {
+            var department = await _context!.Departments
+                .Include(d => d.Employees)
+                .Select(d => new DepartmentDto
+                {
+                    DepartmentID = d.DepartmentID,
+                    DepartmentName = d.DepartmentName,
+                    EmployeeNames = d.Employees != null ? d.Employees.Select(emp => emp.FirstName).ToList() : new List<string>()
+                })
+                .FirstOrDefaultAsync(d => d.DepartmentID == id);
+            if (department == null)
+            {
+                return NotFound();
+            }
+            return Ok(department);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PostCreateDepartment(CreateDepartmentDto dto)
+        {
+            var department_find =await _context!.Departments.FirstOrDefaultAsync(d => d.DepartmentName == dto.DepartmentName);
+            if(department_find != null)
+            {
+                return BadRequest("Department already exists");
+            }
+            await _context!.Departments.AddAsync(new Department
+            {
+                DepartmentName = dto.DepartmentName
+            });
+            await _context!.SaveChangesAsync();
+            return Ok("Department was create");
         }
     }
 }

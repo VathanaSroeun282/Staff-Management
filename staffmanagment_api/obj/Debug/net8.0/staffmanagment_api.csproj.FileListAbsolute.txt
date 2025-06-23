@@ -170,3 +170,4 @@ C:\Users\Nana\OneDrive\Documents\Project\Full Stack\staffmanagement_api\staffman
 C:\Users\Nana\OneDrive\Documents\Project\Full Stack\staffmanagement_api\staffmanagment_api\staffmanagment_api\obj\Debug\net8.0\staffmanagment_api.genruntimeconfig.cache
 C:\Users\Nana\OneDrive\Documents\Project\Full Stack\staffmanagement_api\staffmanagment_api\staffmanagment_api\obj\Debug\net8.0\ref\staffmanagment_api.dll
 C:\Users\Nana\OneDrive\Documents\Project\Full Stack\staffmanagement_api\staffmanagment_api\staffmanagment_api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Nana\OneDrive\Documents\Project\Full Stack\staffmanagement_api\staffmanagment_api\staffmanagment_api\obj\Debug\net8.0\staffmanagment_api.sourcelink.json

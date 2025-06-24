@@ -63,5 +63,17 @@ namespace staffmanagment_api.Controllers
             await _context!.SaveChangesAsync();
             return Ok("Department was create");
         }
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> DeleteDepartment(int id)
+        {   
+            var find_department = await _context!.Departments.FindAsync(id);
+            if (find_department == null)
+            {
+                return NotFound("Department not found");
+            }
+            _context!.Departments.Remove(find_department);
+            await _context!.SaveChangesAsync();
+            return Ok("Department was deleted");
+        }
     }
 }

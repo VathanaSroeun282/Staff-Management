@@ -11,7 +11,7 @@ namespace staffmanagment_api.Mappers
             {
                 RoleID = role.RoleID,
                 RoleName = role.RoleName,
-                EmployeeCount = role.Employees?.Count ?? 0
+                EmployeeName = role.Employees?.Select(e => e.FirstName).ToList() ?? new List<string>()
             };
         }
 

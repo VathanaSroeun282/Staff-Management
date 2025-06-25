@@ -4,9 +4,7 @@
     {
         public int RoleID { get; set; }
         public string RoleName { get; set; } = null!;
-
-        // Optional: count of employees assigned this role
-        public int EmployeeCount { get; set; }
+        public List<string>? EmployeeName { get; set; }
     }
 
     public class CreateRoleDto

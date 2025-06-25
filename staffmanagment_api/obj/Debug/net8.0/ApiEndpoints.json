@@ -56,5 +56,15 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "staffmanagment_api.Controllers.RoleController",
+    "Method": "GetRole",
+    "RelativePath": "api/Role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

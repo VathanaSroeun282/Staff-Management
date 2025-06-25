@@ -39,5 +39,15 @@ namespace staffmanagment_api.Controllers
                 return StatusCode(500, "Internal server error while fetching roles");
             }
         }
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetRoleByID(int id)
+        {
+            var find_Role = await _context!.Roles.FindAsync(id);
+            if (find_Role == null)
+            {
+                return NotFound($"Role with ID {id} not found");
+            }
+            return Ok(find_Role);
+        }
     }
 }

@@ -69,6 +69,22 @@
   },
   {
     "ContainingType": "staffmanagment_api.Controllers.RoleController",
+    "Method": "PostAddNewRole",
+    "RelativePath": "api/Role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newRole",
+        "Type": "staffmanagment_api.DTOs.CreateRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "staffmanagment_api.Controllers.RoleController",
     "Method": "GetRoleByID",
     "RelativePath": "api/Role/{id}",
     "HttpMethod": "GET",

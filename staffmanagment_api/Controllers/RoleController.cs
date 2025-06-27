@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using staffmanagment_api.Data.StaffManagementSystem.Data;
 using staffmanagment_api.DTOs;
+using staffmanagment_api.Models;
 
 namespace staffmanagment_api.Controllers
 {
@@ -48,6 +49,19 @@ namespace staffmanagment_api.Controllers
                 return NotFound($"Role with ID {id} not found");
             }
             return Ok(find_Role);
+        }
+        [HttpPost]
+        public async Task<IActionResult> PostAddNewRole(CreateRoleDto newRole)
+        {
+            var find_Role = await _context!.Roles.FirstOrDefaultAsync(r => r.RoleName == newRole.RoleName);
+            if (find_Role == null) {
+                await _context.Roles.AddAsync(new Role { 
+                    RoleName = newRole.RoleName
+                });
+                await _context.SaveChangesAsync();
+                return Ok(newRole);
+            }
+            return NotFound("Your insert role is conflict! Please try again later!");
         }
     }
 }

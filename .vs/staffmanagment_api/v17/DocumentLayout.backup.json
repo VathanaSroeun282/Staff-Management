@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|c:\\users\\nana\\onedrive\\documents\\project\\full stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|c:\\users\\nana\\onedrive\\documents\\project\\full stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,7 +53,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "staffmanagment_api\\Controllers\\AttendanceController.cs",
+              "ToolTip": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "staffmanagment_api\\Controllers\\AttendanceController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAswBwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T15:23:47.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\Department.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Models\\Department.cs",
@@ -57,11 +74,12 @@
               "RelativeToolTip": "staffmanagment_api\\Models\\Department.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAA0wAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:18:40.176Z"
+              "WhenOpened": "2025-06-25T16:18:40.176Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Models\\Employee.cs",
@@ -69,11 +87,12 @@
               "RelativeToolTip": "staffmanagment_api\\Models\\Employee.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:18:28.932Z"
+              "WhenOpened": "2025-06-25T16:18:28.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EmployeeDto.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\DTOs\\EmployeeDto.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\DTOs\\EmployeeDto.cs",
@@ -81,11 +100,12 @@
               "RelativeToolTip": "staffmanagment_api\\DTOs\\EmployeeDto.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:18:12.892Z"
+              "WhenOpened": "2025-06-25T16:18:12.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "dbo.Roles.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/._VATHANASERVER/dbStaffMG/True/SqlTable/dbo.Roles.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/._VATHANASERVER/dbStaffMG/True/SqlTable/dbo.Roles.sql",
@@ -94,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Controllers\\DepartmentController.cs",
@@ -107,20 +127,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RoleController.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\RoleController.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Controllers\\RoleController.cs",
               "ToolTip": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\RoleController.cs",
               "RelativeToolTip": "staffmanagment_api\\Controllers\\RoleController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAUwDgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwFAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T16:09:29.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\Role.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Models\\Role.cs",
@@ -128,11 +148,12 @@
               "RelativeToolTip": "staffmanagment_api\\Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:10:25.323Z"
+              "WhenOpened": "2025-06-25T16:10:25.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RoleDto.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\DTOs\\RoleDto.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\DTOs\\RoleDto.cs",
@@ -140,7 +161,8 @@
               "RelativeToolTip": "staffmanagment_api\\DTOs\\RoleDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:09:30.086Z"
+              "WhenOpened": "2025-06-25T16:09:30.086Z",
+              "EditorCaption": ""
             }
           ]
         }

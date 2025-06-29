@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Runtime.CompilerServices;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using staffmanagment_api.Data.StaffManagementSystem.Data;
 using staffmanagment_api.DTOs;
@@ -62,6 +64,18 @@ namespace staffmanagment_api.Controllers
                 return Ok(newRole);
             }
             return NotFound("Your insert role is conflict! Please try again later!");
+        }
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> DeleteRole(int id)
+        {
+            var find_Role = await _context!.Roles.FindAsync(id);
+            if(find_Role == null)
+            {
+                return NotFound($"Role with ID {id} not found");
+            }
+            _context.Roles.Remove(find_Role);
+            await _context.SaveChangesAsync();
+            return Ok($"Delete Role {find_Role.RoleName}");
         }
     }
 }

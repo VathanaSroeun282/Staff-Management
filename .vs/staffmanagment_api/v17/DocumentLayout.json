@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|c:\\users\\nana\\onedrive\\documents\\project\\full stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\models\\performancereview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\models\\performancereview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|c:\\users\\nana\\onedrive\\documents\\project\\full stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\models\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\models\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|c:\\users\\nana\\onedrive\\documents\\project\\full stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|c:\\users\\nana\\onedrive\\documents\\project\\full stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|c:\\users\\nana\\onedrive\\documents\\project\\full stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,10 +38,6 @@
       "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|c:\\users\\nana\\onedrive\\documents\\project\\full stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|c:\\users\\nana\\onedrive\\documents\\project\\full stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9291D1DA-3E0B-4D7C-B78C-36B266AA6524}|staffmanagment_api\\staffmanagment_api.csproj|solutionrelative:staffmanagment_api\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,8 +53,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PerformanceReview.cs",
+              "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\PerformanceReview.cs",
+              "RelativeDocumentMoniker": "staffmanagment_api\\Models\\PerformanceReview.cs",
+              "ToolTip": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\PerformanceReview.cs",
+              "RelativeToolTip": "staffmanagment_api\\Models\\PerformanceReview.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T15:43:16.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LeaveRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\LeaveRequest.cs",
+              "RelativeDocumentMoniker": "staffmanagment_api\\Models\\LeaveRequest.cs",
+              "ToolTip": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\LeaveRequest.cs",
+              "RelativeToolTip": "staffmanagment_api\\Models\\LeaveRequest.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T15:43:09.376Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -50,6 +88,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "staffmanagment_api\\Controllers\\AttendanceController.cs",
+              "ToolTip": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "staffmanagment_api\\Controllers\\AttendanceController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowBwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T15:23:47.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\Department.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Models\\Department.cs",
@@ -57,23 +108,25 @@
               "RelativeToolTip": "staffmanagment_api\\Models\\Department.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAA0wAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:18:40.176Z"
+              "WhenOpened": "2025-06-25T16:18:40.176Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Models\\Employee.cs",
               "ToolTip": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\Employee.cs",
               "RelativeToolTip": "staffmanagment_api\\Models\\Employee.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:18:28.932Z"
+              "WhenOpened": "2025-06-25T16:18:28.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "EmployeeDto.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\DTOs\\EmployeeDto.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\DTOs\\EmployeeDto.cs",
@@ -81,11 +134,12 @@
               "RelativeToolTip": "staffmanagment_api\\DTOs\\EmployeeDto.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:18:12.892Z"
+              "WhenOpened": "2025-06-25T16:18:12.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "dbo.Roles.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/._VATHANASERVER/dbStaffMG/True/SqlTable/dbo.Roles.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/._VATHANASERVER/dbStaffMG/True/SqlTable/dbo.Roles.sql",
@@ -94,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Controllers\\DepartmentController.cs",
@@ -107,20 +161,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "RoleController.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\RoleController.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Controllers\\RoleController.cs",
               "ToolTip": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Controllers\\RoleController.cs",
               "RelativeToolTip": "staffmanagment_api\\Controllers\\RoleController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAUwDgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwFAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T16:09:29.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\Models\\Role.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\Models\\Role.cs",
@@ -128,11 +182,12 @@
               "RelativeToolTip": "staffmanagment_api\\Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:10:25.323Z"
+              "WhenOpened": "2025-06-25T16:10:25.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "RoleDto.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\OneDrive\\Documents\\Project\\Full Stack\\staffmanagement_api\\staffmanagment_api\\staffmanagment_api\\DTOs\\RoleDto.cs",
               "RelativeDocumentMoniker": "staffmanagment_api\\DTOs\\RoleDto.cs",
@@ -140,7 +195,8 @@
               "RelativeToolTip": "staffmanagment_api\\DTOs\\RoleDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:09:30.086Z"
+              "WhenOpened": "2025-06-25T16:09:30.086Z",
+              "EditorCaption": ""
             }
           ]
         }

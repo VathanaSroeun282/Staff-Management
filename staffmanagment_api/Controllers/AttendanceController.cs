@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using staffmanagment_api.Data.StaffManagementSystem.Data;
 using staffmanagment_api.DTOs;
+using staffmanagment_api.Mappers;
 
 namespace staffmanagment_api.Controllers
 {
@@ -19,14 +20,7 @@ namespace staffmanagment_api.Controllers
         public async Task<IActionResult> GetAttendances()
         {
             var attendances = await _context!.Attendances.Select(
-                atd => new AttendanceDto
-                {
-                    AttendanceID = atd.AttendanceID,
-                    EmployeeID = atd.EmployeeID,
-                    EmployeeName = atd.Employee != null ? atd.Employee.FirstName : "Unknown",
-                    ClockInTime = atd.ClockInTime,
-                    ClockOutTime = atd.ClockInTime
-                }
+                atd => AttendanceMapper.ToDto(atd)
                 ).ToArrayAsync();
             return Ok(attendances);
         }

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using staffmanagment_api.Data.StaffManagementSystem.Data;
 using staffmanagment_api.DTOs;
+using staffmanagment_api.Mappers;
 using staffmanagment_api.Models;
 
 namespace staffmanagment_api.Controllers
@@ -21,31 +22,29 @@ namespace staffmanagment_api.Controllers
         public async Task<IActionResult> GetAllDepartments()
         {
             var allDep = await _context!.Departments.Select(
-                    e => new DepartmentDto
-                    {
-                        DepartmentID = e.DepartmentID,
-                        DepartmentName = e.DepartmentName,
-                        EmployeeNames = e.Employees != null ? e.Employees.Select(emp => emp.FirstName).ToList() : new List<string>()
-                    }).ToListAsync();
+                    e => DepartmentMapper.ToDto(e) 
+                    ).ToListAsync();
             return Ok(allDep);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetDepartmentById(int id)
         {
-            var department = await _context!.Departments
-                .Include(d => d.Employees)
-                .Select(d => new DepartmentDto
-                {
-                    DepartmentID = d.DepartmentID,
-                    DepartmentName = d.DepartmentName,
-                    EmployeeNames = d.Employees != null ? d.Employees.Select(emp => emp.FirstName).ToList() : new List<string>()
-                })
-                .FirstOrDefaultAsync(d => d.DepartmentID == id);
-            if (department == null)
+            try
             {
-                return NotFound();
+                var department = await _context!.Departments
+                    .Where(d => d.DepartmentID == id)
+                    .Select(d => DepartmentMapper.ToDto(d))
+                    .FirstOrDefaultAsync();
+                if (department == null)
+                {
+                    return NotFound();
+                }
+                return Ok(department);
             }
-            return Ok(department);
+            catch
+            {
+                return Ok("Hello kon papa!");
+            }
         }
 
         [HttpPost]

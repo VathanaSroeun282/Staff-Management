@@ -8,7 +8,7 @@
             public string ChangeType { get; set; } = null!;
             public DateTime ChangeDate { get; set; }
             public int ChangedBy { get; set; }
-            public int EmployeeID { get; set; }
+            //public int EmployeeID { get; set; }
 
             // Optional: flatten employee name to send with audit log
             public string EmployeeName { get; set; } = string.Empty;

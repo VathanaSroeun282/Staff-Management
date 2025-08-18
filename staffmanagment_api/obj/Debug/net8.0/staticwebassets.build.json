@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "KOKJ5eh2LgcATrKKx1J1x49v2XVIZ/bPO+g4dBwIqdI=",
+  "Hash": "m3NvnYehW3j2OGVv+THiOvSz4NmTgDNDz6BZp1ZehLs=",
   "Source": "staffmanagment_api",
   "BasePath": "_content/staffmanagment_api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

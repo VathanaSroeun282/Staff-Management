@@ -14,7 +14,7 @@ namespace staffmanagment_api.Mappers
                 ChangeType = log.ChangeType,
                 ChangeDate = log.ChangeDate,
                 ChangedBy = log.ChangedBy,
-                EmployeeID = log.EmployeeID,
+                //EmployeeID = log.EmployeeID,
                 EmployeeName = log.Employee != null
                     ? $"{log.Employee.FirstName} {log.Employee.LastName}"
                     : string.Empty

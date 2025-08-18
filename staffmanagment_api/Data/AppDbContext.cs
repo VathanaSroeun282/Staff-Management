@@ -34,11 +34,6 @@
                     .WithMany(r => r.Employees)
                     .HasForeignKey(e => e.RoleID);
 
-                //Employee with Attendance relationship
-                modelBuilder.Entity<Attendance>()
-                    .HasOne(a => a.Employee)
-                    .WithMany(e => e.Attendances)
-                    .HasForeignKey(a => a.EmployeeID);
 
                 //Employee with PerformanceReview relationship
                 modelBuilder.Entity<PerformanceReview>()

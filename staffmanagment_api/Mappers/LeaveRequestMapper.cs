@@ -16,8 +16,11 @@ namespace staffmanagment_api.Mappers
                 Reason = leave.Reason,
                 Status = leave.Status,
                 EmployeeID = leave.EmployeeID,
-                EmployeeName = leave.Employee?.FirstName + " " + leave.Employee?.LastName ?? ""
+                EmployeeName = leave.Employee != null
+                ? $"{leave.Employee.FirstName} {leave.Employee.LastName}"
+                : string.Empty
             };
+
         }
 
         public static LeaveRequest FromCreateDto(CreateLeaveRequestDto dto)

@@ -5,16 +5,30 @@ using staffmanagment_api.Data.StaffManagementSystem.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Add DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("dbStaffMG"))
 );
+
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:5173") // Vue dev server
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+// Add Controllers with JSON options
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = null;
 });
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -28,6 +42,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// Use CORS before Authorization
+app.UseCors();
 
 app.UseAuthorization();
 

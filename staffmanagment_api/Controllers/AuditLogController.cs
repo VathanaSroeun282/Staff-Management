@@ -55,12 +55,7 @@ namespace staffmanagment_api.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAddNewAuditLog(CreateAuditLogDto createAuditLogDto)
         {
-            var find_auditLog = await _dbContext!.AuditLogs.FirstOrDefaultAsync(aud => aud.EmployeeID == createAuditLogDto.EmployeeID && aud.ChangeDate == createAuditLogDto.ChangeDate);
-            if(find_auditLog != null)
-            {
-                return NotFound("This AuditLog already existing!");
-            }
-            await _dbContext!.AuditLogs.AddAsync(AuditLogMapper.FromCreateDto(createAuditLogDto));
+            _dbContext!.AuditLogs.Add(AuditLogMapper.FromCreateDto(createAuditLogDto));
             await _dbContext!.SaveChangesAsync();
             return Ok("This AuditLog already add to the list!");
         }

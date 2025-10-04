@@ -61,11 +61,31 @@ namespace staffmanagment_api.Controllers
         {
             try
             {
-                var find_leaveRequest = await _dbContext!.LeaveRequests.FirstOrDefaultAsync(le => le.EmployeeID == leaveRequestDto.EmployeeID && le.EndDate == leaveRequestDto.EndDate && le.StartDate == leaveRequestDto.StartDate);
-                if (find_leaveRequest != null) return NotFound("Douplicate leave request!");
-                await _dbContext!.LeaveRequests.AddAsync(LeaveRequestMapper.FromCreateDto(leaveRequestDto));
+                var find_leaveRequest = await _dbContext!.LeaveRequests.FirstOrDefaultAsync(lr=>lr.EmployeeID == leaveRequestDto.EmployeeID);
+                if ( find_leaveRequest != null)
+                {
+                    _dbContext!.LeaveRequests.Add(LeaveRequestMapper.FromCreateDto(leaveRequestDto));
+                    await _dbContext.SaveChangesAsync();
+                    return Ok("Your Request Leave have been added");
+                }
+                return NotFound($"Employee ID={leaveRequestDto.EmployeeID} Not found in the System!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            finally { _dbContext.Dispose(); }
+        }
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> DeleteLeaveRequest(int id)
+        {
+            try
+            {
+                var find_leaveRequest = await _dbContext!.LeaveRequests.FindAsync(id);
+                if (find_leaveRequest != null) return NotFound($"Leave Request ID = {id} Not Found!!!");
+                _dbContext!.LeaveRequests.Remove(find_leaveRequest);
                 await _dbContext.SaveChangesAsync();
-                return Ok(leaveRequestDto);
+                return Ok($"Leave Request ID = {id} have been delete!");
             }
             catch (Exception ex)
             {

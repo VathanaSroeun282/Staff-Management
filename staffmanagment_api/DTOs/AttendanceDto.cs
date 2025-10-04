@@ -8,7 +8,7 @@
         public int EmployeeID { get; set; }
 
         // Optional: flatten Employee data if you want to return some employee details in AttendanceDto
-        public string EmployeeName { get; set; } = string.Empty;
+        public string? EmployeeName { get; set; }
     }
 
     public class CreateAttendanceDto

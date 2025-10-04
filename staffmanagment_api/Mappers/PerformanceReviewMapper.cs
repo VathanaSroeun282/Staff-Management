@@ -14,7 +14,9 @@ namespace staffmanagment_api.Mappers
                 Rating = review.Rating,
                 Comments = review.Comments,
                 EmployeeID = review.EmployeeID,
-                EmployeeName = review.Employee?.FirstName + " " + review.Employee?.LastName ?? ""
+                EmployeeName = review.Employee != null
+                    ? $"{review.Employee.FirstName} {review.Employee.LastName}"
+                    : string.Empty
             };
         }
 

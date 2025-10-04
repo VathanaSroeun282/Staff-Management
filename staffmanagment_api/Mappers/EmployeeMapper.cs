@@ -1,5 +1,6 @@
 ﻿using staffmanagment_api.Controllers;
 using staffmanagment_api.DTOs.staffmanagment_api.DTOs;
+using static staffmanagment_api.DTOs.staffmanagment_api.DTOs.EmployeeDto;
 
 namespace staffmanagment_api.Mappers
 {
@@ -19,10 +20,12 @@ namespace staffmanagment_api.Mappers
                 Email = employee.Email,
                 PhoneNumber = employee.PhoneNumber,
                 Status = employee.Status,
-                DepartmentID = employee.DepartmentID,
                 DepartmentName = employee.Department?.DepartmentName ?? "",
-                RoleID = employee.RoleID,
-                RoleName = employee.Role?.RoleName ?? ""
+                RoleName = employee.Role?.RoleName ?? "",
+                AttendanceCount = employee.Attendances?.Count ?? 0,
+                PerformanceReviewCount  = employee.PerformanceReviews?.Count ?? 0,
+                AuditLogCount = employee.AuditLogs?.Count ?? 0,
+                LeaveRequestCount = employee.LeaveRequests?.Count ?? 0
                 // You can add lists like Attendances as separate DTO collections if needed
             };
         }

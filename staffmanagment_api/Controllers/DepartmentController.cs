@@ -21,10 +21,22 @@ namespace staffmanagment_api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllDepartments()
         {
-            var allDep = await _context!.Departments.Select(
-                    e => DepartmentMapper.ToDto(e) 
-                    ).ToListAsync();
-            return Ok(allDep);
+            try
+            {
+                var allDept = await _context!.Departments
+                       .Include(e => e.Employees)
+                       .Select(e => DepartmentMapper.ToDto(e))
+                       .ToListAsync();
+                if (allDept.Any())
+                {
+                    return Ok(allDept);
+                }
+                return NotFound();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetDepartmentById(int id)

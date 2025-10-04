@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using staffmanagment_api.Data.StaffManagementSystem.Data;
 using staffmanagment_api.DTOs;
+using staffmanagment_api.Mappers;
 using staffmanagment_api.Models;
 
 namespace staffmanagment_api.Controllers
@@ -23,13 +24,8 @@ namespace staffmanagment_api.Controllers
             try
             {
                 //var allRole = "null";
-                var allRole = await _context!.Roles.Select(
-                    e => new RoleDto
-                    {
-                        RoleID = e.RoleID,
-                        RoleName = e.RoleName,
-                        EmployeeName = e.Employees != null ? e.Employees.Select(emp => emp.FirstName).ToList() : new List<string>()
-                    }
+                var allRole = await _context!.Roles.Include(role=>role.Employees).Select(
+                    e => RoleMapper.ToDto(e)
                     ).ToListAsync();
                 if (allRole == null || allRole.Count == 0)
                 {

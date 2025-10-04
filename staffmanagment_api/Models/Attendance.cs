@@ -12,7 +12,7 @@ namespace staffmanagment_api.Models
         //Property to hold the EmployeeID of the employee associated with this attendance record
         //Navigation property to the Employee associated with this attendance record
         public int EmployeeID { get; set; }
-        public Employee Employee { get; set; } = null!;
+        public Employee ? Employee { get; set; }
 
     }
 

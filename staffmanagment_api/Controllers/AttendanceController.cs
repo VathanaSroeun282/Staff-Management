@@ -20,7 +20,7 @@ namespace staffmanagment_api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAttendances()
         {
-            var attendances = await _context!.Attendances.Select(
+            var attendances = await _context!.Attendances.Include(pfr => pfr.Employee).Select(
                 atd => AttendanceMapper.ToDto(atd)
                 ).ToArrayAsync();
             return Ok(attendances);
@@ -41,17 +41,14 @@ namespace staffmanagment_api.Controllers
         [HttpPost]
         public async Task<IActionResult> PostCreateAttendace(CreateAttendanceDto createAttendanceDto)
         {
-            var find_attendance = await _context!.Attendances.FirstOrDefaultAsync(att => att.EmployeeID == createAttendanceDto.EmployeeID);
+            var find_attendance = await _context!.Attendances
+                                   .FirstOrDefaultAsync(att => att.ClockInTime == createAttendanceDto.ClockInTime 
+                                                        && att.ClockOutTime == createAttendanceDto.ClockOutTime);
             if(find_attendance != null)
             {
                 return Ok("Attendance existing in the list");
             }
-            await _context!.Attendances.AddAsync(new Attendance
-            {
-                ClockInTime = createAttendanceDto.ClockInTime,
-                ClockOutTime = createAttendanceDto.ClockOutTime,
-                EmployeeID = createAttendanceDto.EmployeeID
-            });
+            _context!.Attendances.Add(AttendanceMapper.FromCreateDto(createAttendanceDto));
             await _context!.SaveChangesAsync();
             return Ok("Attendance added!");
         }
